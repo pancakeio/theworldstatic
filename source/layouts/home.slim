@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
+    title = current_page.data.title
+    = stylesheet_link_tag "normalize", "all"
+    / || "Static Handbook | Pancake"
+
+  body
+    - data.guides.each do |g|
+      .guide
+        a href="/guides/#{g}" = g
+
+
+/ ## Goal:
+
+/ - Create a basic website with LESS, Coffeescript
+/ - Customize the template
+/ - Add blog pages: "My First Blog Post"
+/ - Add non-blog pages: "Get Started with Middleman"

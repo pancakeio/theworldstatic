@@ -1,0 +1,82 @@
+@charset("utf-8")
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,400italic,600italic,700italic,900")
+
+body
+  // background: #d4d4d4 url("../images/background.png")
+  font-family: "Source Sans Pro", sans-serif
+  line-height: 1.4
+  font-size: 1.1rem
+
+h1, h2, h3, h4
+  color: #4aa1eb
+  font-weight: normal
+
+h1
+  font-weight: 200
+  font-size: 4rem
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .5)
+  margin: 0
+
+h2
+  margin-top: 35px
+
+.nav ul
+  margin: 0 20px
+  padding: 0
+  background: #4aa1eb
+  padding-top: 55px
+  li
+    background: #4aa1eb
+    margin: 0
+    list-style: none
+    h3
+      // margin-top: 10px
+      // padding-bottom: 55px
+      font-size: 1.1rem
+      color: white
+      text-align: center
+      font-weight: 300
+      padding: 10px 12px
+      margin: 0
+
+
+    a
+      padding: 10px 12px
+      display: block
+      text-decoration: none
+      color: white
+      font-size: 1.2rem
+      &:hover
+        background: darken(#4aa1eb, 30%)
+
+  width: 200px
+  float: left
+
+.contents
+  width: 600px
+  padding-top: 50px
+  float: left
+
+pre, code
+  font-family: "Menlo", "Monaco","Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono","monospace"
+  background: #fdfdfd
+  border: 1px solid #eee
+  border-radius: 4px
+  color: #444
+  font-size: 1rem
+
+.highlight.shell
+  .c
+    color: #999
+
+pre
+  // background: #f6fbff
+  padding: 10px 14px
+  code
+    padding: 0
+    margin: 0
+    border: none
+
+code
+  margin: 0 4px
+  padding: 1px 5px

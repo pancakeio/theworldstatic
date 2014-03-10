@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
+    title = current_page.data.title
+    = stylesheet_link_tag "normalize", "all"
+    = javascript_include_tag  "all"
+    / || "Static Handbook | Pancake"
+
+  body
+    .nav
+      ul
+        li: h3
+          | the static handbook
+        - data.guides.each do |g|
+          li: a href="/guides/#{g}" = g.titlecase
+    .contents
+      == yield
