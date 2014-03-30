@@ -3,19 +3,30 @@ html
   head
     meta charset="utf-8"
     meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
-    title = current_page.data.title
+    title The World Static
     = stylesheet_link_tag "normalize", "all"
-    / || "Static Handbook | Pancake"
 
   body
-    - data.guides.each do |g|
-      .guide
-        a href="/guides/#{g}" = g
+    .container
+      .header
+        h1 The World Static
+
+      .main
+        p
+          | Get back to the basics with static sites! Static sites rely only on well-known, tried-and-true web technologies &mdash; HTML, CSS, and Javascript. Moreover, they are easy to scale and can be hosted cheaply or even for free in many places such as Amazon S3 or <a href='https://pancake.io'>Pancake</a>.
+
+        p
+          | However, writing in HTML all the time can be a little tedious. They make it easy to create static sites by cleanly separating content from layout, while lacking complex servers to configure. With a generator, you can focus on what is important.
 
 
-/ ## Goal:
+        p
+          | In other words, static generators are a front-end developer's best friend. These guides are designed to introduce you to different static generators and help you find one you like. They cover the basics of adding content, using layouts, and integrating things like SASS and CoffeeScript.
 
-/ - Create a basic website with LESS, Coffeescript
-/ - Customize the template
-/ - Add blog pages: "My First Blog Post"
-/ - Add non-blog pages: "Get Started with Middleman"
+        h2 The Static Handbook
+
+        .guides
+          - data.guides.each do |g|
+            .guide
+              a href="/guides/#{g}" = g
+          .guide
+            a more soon!

@@ -1,0 +1,121 @@
+$appWidth: 720px
+$linkColor: #855eff
+$staticBlue: #4aa1eb
+
+*
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+.roboto
+    font-family: "Roboto Slab", Helvetica, sans-serif
+
+.container
+    width: 720px
+    margin: 0 auto
+    padding-bottom: 60px
+    overflow: hidden
+
+.header
+    @extend .roboto
+    margin-top: 50px
+    margin-bottom: 25px
+    h1
+        font-size: 4rem
+
+header
+    @include display(flex)
+    @include justify-content(space-between)
+    @include align-items(center)
+    .links
+        a
+            display: inline-block
+            font-size: 1rem
+            padding: 4px 12px
+            margin-left: 5px
+            border-radius: 4px
+            background: $staticBlue
+            color: white
+            &:hover
+                background: darken($staticBlue, 10%)
+                color: white
+                text-decoration: none
+
+body
+    font-family: "Source Sans Pro", sans-serif
+    line-height: 1.4
+    font-size: 1.1rem
+
+h1, h2, h3, h4
+    color: $staticBlue
+    font-weight: normal
+    @extend .roboto
+
+h1
+    font-weight: 200
+    font-size: 3rem
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5)
+    margin: 0
+
+h2
+    margin-top: 35px
+a
+    color: $linkColor
+    text-decoration: none
+    &:hover
+        text-decoration: underline
+        color: darken($linkColor, 10%)
+
+.nav
+    h3
+        // color: white
+        // text-align: center
+        // font-weight: 300
+        // padding: 10px 12px
+        font-size: 1.1rem
+        a
+            color: lighten($staticBlue, 15%)
+        margin: 10px 0
+
+    ul
+        margin: 0 20px
+        padding: 0
+        background: $staticBlue
+        padding-top: 55px
+        width: 200px
+        float: left
+        li
+            background: $staticBlue
+            margin: 0
+            list-style: none
+            a
+                padding: 10px 12px
+                display: block
+                text-decoration: none
+                color: white
+                font-size: 1.2rem
+                &:hover
+                    background: darken($staticBlue, 30%)
+
+pre, code
+    font-family: "Menlo", "Monaco","Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono","monospace"
+    background: #fdfdfd
+    border: 1px solid #eee
+    border-radius: 4px
+    color: #444
+    font-size: 1rem
+
+.highlight.shell
+    .c
+        color: #999
+
+pre
+    padding: 10px 14px
+    code
+        padding: 0
+        margin: 0
+        border: none
+
+code
+    margin: 0 4px
+    padding: 1px 5px

@@ -1,8 +1,9 @@
 ---
 title: Middleman - Pancake Docs
+generator: Middleman
+home: http://middlemanapp.com/
+git: https://github.com/middleman/middleman
 ---
-
-# Middleman
 
 ## Basic Commands
 
@@ -42,7 +43,7 @@ Templates are known as layouts, and live in `./source/layouts`. By default they 
 
 There are two places you can specify the template to be used for a page: in `config.rb`, or in a page's frontmatter.
 
-For example, to use a layout `source/layouts/pineapple.erb` with `source/pages/apple.html.erb`, both are valid:
+For example, to apply a layout `source/layouts/pineapple.erb` to `source/pages/apple.html.erb`, both are valid:
 
   - In `config.rb`, specify:
 
@@ -65,3 +66,7 @@ For example, to use a layout `source/layouts/pineapple.erb` with `source/pages/a
         ... markdown content goes here ...
 
     Apart from `layout`, there are other special keywords such as `ignore`. You can learn more about that here. Everything else gets passed to the template, in the `current_page.data` hash.
+
+## Extensions
+
+Middleman comes with built-in support for CoffeeScript, SASS, and HAML. Other preprocessors, such as LESS or Slim, can generally be added simply by including the appropriate gem in your site's Gemfile.

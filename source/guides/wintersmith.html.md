@@ -1,8 +1,9 @@
 ---
 title: Wintersmith - Pancake Docs
+generator: Wintersmith
+home: http://wintersmith.io/
+git: https://github.com/jnordberg/wintersmith
 ---
-
-# Wintersmith
 
 ## Basic Commands
 
@@ -40,7 +41,7 @@ A basic Wintersmith project might look like:
 
 ## Pages
 
-Pages are written in markdown. Page files end in `.md`.
+Pages are written in markdown; page files end in `.md`.
 
 ## Templating
 
@@ -63,3 +64,7 @@ For example, to use a layout `templates/pineapple.jade` with `contents/apple.md`
         {
           "template": "pineapple.jade"
         }
+
+## Extensions
+
+To use SASS, LESS, CoffeeScript, or other preprocessors, there are numerous [plugins](https://github.com/jnordberg/wintersmith/wiki/Plugins).

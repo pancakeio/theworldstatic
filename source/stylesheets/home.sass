@@ -1,0 +1,27 @@
+$guideSpacing: 15px
+
+.guides
+    margin-top: 40px
+    .guide
+        &:nth-child(odd)
+            margin-right: $guideSpacing
+
+        margin-bottom: $guideSpacing
+        float: left
+        a
+            @extend .roboto
+            border-radius: 3px
+            display: block
+            text-decoration: none
+            width: ($appWidth - $guideSpacing) / 2
+            color: white
+            text-align: center
+            padding: 40px
+            background: $staticBlue
+            font-size: 1.6rem
+            font-weight: 300
+            &:hover
+                background: darken($staticBlue, 20%)
+
+p
+    color: #777

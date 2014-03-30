@@ -6,14 +6,19 @@ html
     title = current_page.data.title
     = stylesheet_link_tag "normalize", "all"
     = javascript_include_tag  "all"
-    / || "Static Handbook | Pancake"
 
   body
-    .nav
-      ul
-        li: h3
-          | the static handbook
-        - data.guides.each do |g|
-          li: a href="/guides/#{g}" = g.titlecase
-    .contents
-      == yield
+    .container
+      .nav
+        h3
+          a href='/' the world static
+
+      .contents
+        header
+          h1 = current_page.data.generator
+          .links
+            a href=current_page.data.home
+              =' current_page.data.generator
+              | Homepage
+            a href=current_page.data.git Source
+        == yield
