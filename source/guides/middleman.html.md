@@ -65,7 +65,7 @@ For example, to apply a layout `source/layouts/pineapple.erb` to `source/pages/a
 
         ... markdown content goes here ...
 
-    Apart from `layout`, there are other special keywords such as `ignore`. You can learn more about that here. Everything else gets passed to the template, in the `current_page.data` hash.
+    Apart from `layout`, there are other special keywords such as `ignore`. You can learn more about that [here](http://middlemanapp.com/basics/frontmatter/). Everything else gets passed to the template, in the `current_page.data` hash.
 
 ## Extensions
 
