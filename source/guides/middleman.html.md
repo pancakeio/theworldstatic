@@ -1,5 +1,5 @@
 ---
-title: Middleman - Pancake Docs
+title: Middleman Guide
 generator: Middleman
 home: http://middlemanapp.com/
 git: https://github.com/middleman/middleman

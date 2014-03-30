@@ -1,5 +1,5 @@
 ---
-title: Wintersmith - Pancake Docs
+title: Wintersmith Guide
 generator: Wintersmith
 home: http://wintersmith.io/
 git: https://github.com/jnordberg/wintersmith
