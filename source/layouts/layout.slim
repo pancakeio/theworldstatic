@@ -1,24 +1,15 @@
-doctype html
-html
-  head
-    meta charset="utf-8"
-    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
-    title = current_page.data.title
-    = stylesheet_link_tag "normalize", "all"
-    = javascript_include_tag  "all"
+- wrap_layout :base do
+  .nav
+    h3
+      a href='/' the world static
 
-  body
-    .container
-      .nav
-        h3
-          a href='/' the world static
+  .contents
+    header
+      h1 = current_page.data.generator
+      .links
+        a href=current_page.data.home
+          =' current_page.data.generator
+          | Homepage
+        a href=current_page.data.git Source
 
-      .contents
-        header
-          h1 = current_page.data.generator
-          .links
-            a href=current_page.data.home
-              =' current_page.data.generator
-              | Homepage
-            a href=current_page.data.git Source
-        == yield
+    == yield
